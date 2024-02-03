@@ -16,9 +16,19 @@ import javax.persistence.Table;
 import org.hibernate.annotations.CreationTimestamp;
 
 import entity.embeded.StudentName;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Table(name = "student")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
 public class StudentEntity {
 
     @Id
